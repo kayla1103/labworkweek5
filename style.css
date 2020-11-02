@@ -1,0 +1,81 @@
+h1 {
+  font-family: 'Lobster', cursive;
+  text-align: center;
+}
+
+p {
+  font-family: 'Satisfy', cursive;
+  font-size: 22px;
+  text-align: right;
+}
+
+body {
+  background-image: url("clouds1.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.responsive {
+  width: 50%;
+  height: 100%;
+}
+
+/* RWD using @media for different screen widths */
+@media screen and (max-width: 992px){
+
+  body{
+    background-image: url("clouds1.jpg");
+    background-repeat: no-repeat;
+
+}
+
+@media screen and (max-width: 600px){
+  body{
+    background-image: url(clouds2.jpg);
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 600px){
+  div.hide {
+    display: none;
+  }
+}
+
+/* The navbar container */
+.topnav {
+  overflow: hidden;
+  background-color: #50b4b2;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: #50b4b2;
+}
+
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+    background-color: #51e9f2;
+  }
+}
+
+.footer {
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #50b4b2;
+  color: white;
+  text-align: center;
+}
